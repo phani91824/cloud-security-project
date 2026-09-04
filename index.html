@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sensitive Data Exposure Detector</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Sensitive Data Exposure Detector</h1>
+
+        <p class="subtitle">
+            Scan your text or code for sensitive information
+        </p>
+
+        <textarea id="inputText"
+            placeholder="Paste your text or code here..."></textarea>
+
+        <button onclick="scanData()">
+            Scan for Sensitive Data
+        </button>
+
+        <div id="loading"></div>
+
+        <div id="result" class="result">
+
+            <h2>Scan Results</h2>
+
+            <p id="risk"></p>
+
+            <div id="detectedData"></div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
